@@ -1,0 +1,20 @@
+
+2026-10-16 10:00:00
+Full thread dump Java HotSpot(TM) 64-Bit Server VM:
+
+"main" #1 prio=5 os_prio=0 tid=0x000001 nid=0x1001 waiting on condition
+   java.lang.Thread.State: WAITING
+        at java.lang.Object.wait(Native Method)
+        at com.example.Main.main(Main.java:10)
+
+"Worker-1" #2 prio=5 os_prio=0 tid=0x000002 nid=0x1002 waiting for monitor entry
+   java.lang.Thread.State: BLOCKED
+        - waiting to lock <0x00000001>
+        - locked <0x00000002>
+        at com.example.Worker.process(Worker.java:40)
+
+"Worker-2" #3 prio=5 os_prio=0 tid=0x000003 nid=0x1003 waiting for monitor entry
+   java.lang.Thread.State: BLOCKED
+        - waiting to lock <0x00000002>
+        - locked <0x00000001>
+        at com.example.Database.save(Database.java:55)
