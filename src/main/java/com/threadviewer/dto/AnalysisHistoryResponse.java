@@ -38,12 +38,35 @@ public class AnalysisHistoryResponse {
         this.deadlockDetected = deadlockDetected;
     }
 
-    public UUID getId() { return id; }
-    public LocalDateTime getCreatedAt() { return createdAt; }
-    public int getTotalThreads() { return totalThreads; }
-    public int getDaemonThreads() { return daemonThreads; }
-    public int getNonDaemonThreads() { return nonDaemonThreads; }
-    public int getBlockedThreadCount() { return blockedThreadCount; }
-    public int getWaitingThreadCount() { return waitingThreadCount; }
-    public boolean isDeadlockDetected() { return deadlockDetected; }
+    public UUID getId() {
+        return id;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public int getTotalThreads() {
+        return totalThreads;
+    }
+
+    public int getDaemonThreads() {
+        return daemonThreads;
+    }
+
+    public int getNonDaemonThreads() {
+        return nonDaemonThreads;
+    }
+
+    public int getBlockedThreadCount() {
+        return blockedThreadCount;
+    }
+
+    public int getWaitingThreadCount() {
+        return waitingThreadCount;
+    }
+
+    public boolean isDeadlockDetected() {
+        return deadlockDetected;
+    }
 }
